@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #0C0908;
+}
+
+header{
+	background-image: url("images/Starbucks.png");
+	height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+    border-radius: 100px;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li .active{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	float: left;
+	width: 50px;
+	height: auto;
+	padding: 5px 20px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.text-position{
+	position: absolute;
+	top: 78%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text-position em{
+	font-size: 1.25em;
+	letter-spacing: 1px;
+	font-family: "Lora",serif;
+	color: white;
+}
+
+.text-position a{
+	display: inline-block;
+	padding: 8px 18px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+.text-position a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+footer {
+	position: absolute;
+	top: 92%;
+	width: 100%;
+    color: white;
+	color: rgba(255, 255, 255, .4);
+}
+
+footer address{
+	text-align: center; 
+}
+
+
+footer p {
+  text-align: center; 
+  color: rgba(255, 255, 255, .4);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order</title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<script type="text/javascript" src="Project.js"></script>
+</head>
+<body>
+    <header class="header">
+		<nav>
+			<ul>
+				<li style="list-style: none; display: inline"></li>
+				<li>
+					<a href="#" class="active">FORM</a>
+				</li>
+				<li style="list-style: none; display: inline"></li>
+				<li>
+					<a href="Project.html">HOME</a>
+				</li>
+	        </ul>
+		</nav>
+    </header>
+    
+    <form name='order' onsubmit="return formValidation()" class="main">
+    	
+    	<ul>
+    		<li>
+    			<div class="title"><h1>Order Form</h1></div>
+           </li>
+    		<li><label><span style="color:red">*</span>Username</label></li>
+    		<li><input type="text" name="name" required></li>
+
+    		<li><label><span style="color:red">*</span>Merchandise</label></li>
+    		<li><select name="merchandise" required="">
+	        	<option value="" disabled selected>Click to choose</option>
+	        	<optgroup label="Merchandise">
+				<option label="Sakura Blossom Series">Sakura Blossom Series</option>
+				<option label="Starbucks Heritage Series">Starbucks Heritage Series</option>
+				<option label="Timeless Black Collection">Timeless Black Collection</option>
+				<option label="Vera Wang + STARBUCKS® Collection">Vera Wang + STARBUCKS® Collection</option>	
+			    </optgroup>
+				</select>		
+	        </li>
+
+    		<li><label><span style="color:red">*</span>Quantity</label></li>
+    		<li><input type="number" name="quantity" required></li>
+
+
+    		<li><label><span style="color:red">*</span>E-mail</label></li>
+    		<li><input type="email" name="email" required></li>
+
+
+    		<li><label><span style="color:red">*</span>Shipping Address</label></li>
+    		<li><input type="text" name="address" required></li>
+
+
+    		<li><label><span style="color:red">*</span>Contact</label></li>
+    		<li><input type="text" name="contact" placeholder="xxx-xxxxxxxx" pattern="[0-9]{3}-[0-9]{7}" required=""></li>
+
+    		<li><label for="more">Description</label></li>
+			<li><textarea></textarea></li>
+
+    		<li><button type="submit">Confirm</button></li>
+    	</ul>
+    </form>
+</body>
+</html>
